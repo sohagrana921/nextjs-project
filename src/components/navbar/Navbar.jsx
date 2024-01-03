@@ -2,9 +2,9 @@ import Links from "./links/Links";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="flex justify-between">
       <div>
-        <h1>Logo</h1>
+        <h1 className="text-2xl font-bold">Logo</h1>
       </div>
       <div>
         <Links />

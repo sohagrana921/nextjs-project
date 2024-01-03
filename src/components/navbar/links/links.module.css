@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.mobileLinks {
+  position: absolute;
+  top: 100px;
+  justify-content: center;
+  right: 0;
+  width: 50%;
+  height: calc(100vh-100px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.mobileButton,
+.mobileLinks {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+  .mobileButton,
+  .mobileLinks {
+    display: block;
+  }
+}
